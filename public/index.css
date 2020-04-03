@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*
+{
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	overflow-x: hidden;
+	background: rgb(34,193,195);
+	background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+}
+header
+{
+	margin: 2rem 0;
+	text-align: center;
+	color: yellow;
+}
+header h1
+{
+	font-size: 5rem;
+	width: 100vw;
+	background: #D38312;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+header h4
+{
+	font-size: 2.5rem;
+	font-style: italic;
+	width: 100vw;
+	background: #ff0084;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: lightyellow;
+}
+
+.form
+{
+	height: 3rem;
+	width: 75%;
+}
+.form input
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+	text-align: center;
+	font-size: 2rem; 
+	box-shadow: 0 0 1rem 0.35rem lightgrey;
+}
+
+.list
+{
+	margin: 3rem 0;
+	padding: 0.5rem 0;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-grow: 1;
+	align-items: center;
+	background: #525252;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.list li
+{
+	color: yellow;
+	width: 35%;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	animation: appear 0.7s linear;
+	transition: color 0.5s;
+	cursor: pointer;
+}
+.list li.done
+{
+	text-decoration: line-through;
+	color: lightgrey
+}
+@keyframes appear
+{
+	0%{opacity: 0%;
+		transform: scale(0.5);}
+	100%{opacity: 100%;
+		transform: scale(1);}
+}
+
+#deletebtn
+{
+	float: right;
+	color: darkred;
+}
+#deletebtn:hover
+{
+	color: indianred;
+	cursor: default;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	:root
+	{
+		font-size: 35px;
+	}
+}
